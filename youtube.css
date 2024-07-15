@@ -1,0 +1,483 @@
+/* Adding roboto font*/
+body{
+    /* height: 100vh; */
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    
+}
+/* Styling for the header */
+.header{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 0;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
+    background-color: white;
+}
+/* styling for the youtube logo div */
+.logo-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-left: -20px;
+    background-color: white;
+    z-index: 99;
+}
+/* menu icon */
+.menu{
+    /* margin-left: 0px; */
+    padding: 8px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.menu:hover{
+    background-color: #eae7e7f1;
+}
+.logo-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.ng{
+    font-weight: bold;
+}
+.ng::after{
+    content: 'NG';
+    color: #515050;
+    position: absolute;
+    top: 4px;
+    font-size: 10px;
+}
+.image-logo{
+    width: 32px;
+    height: 30px;
+}
+/* input search bar */
+.search{
+    border: 1px solid #ccc;
+    width: 530px;
+    padding: 7px;
+    padding-left: 55px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.search:focus{
+    outline: 1px solid rgb(38, 38, 244);
+}
+#search-icon{
+  position: relative;
+  left: 40px;
+}
+/* search button */
+.search-button{
+    border: 1px solid #ccc;
+    padding: 7px 24px;
+    background-color: #f7f5f5f1;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    right: 3.4px;
+    border-left: none;
+    cursor: pointer;
+}
+.search-button:hover{
+    background-color: #d2d2d2f1;
+}
+#mic{
+    background-color: #eae7e7f1;
+    padding: 10px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#mic:hover{
+    background-color: #d2d2d2f1;
+}
+
+.search-button:hover::after{
+    position: absolute;
+    top: 4rem;
+    font-size: small;
+    right: 0;
+    content: 'Search';
+    background-color: #777373;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.mic:hover::after{
+    position: absolute;
+    top: 4rem;
+    font-size: small;
+    right: 20rem;
+    content: 'Search with your voice';
+    background-color: #777373;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.icon-account{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.right-icon{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 3px 7px;
+}
+.right-icon:hover{
+    background-color: #eae7e7f1;
+    border-radius: 50%;
+   
+}
+.right-icon2{
+    font-size: 20px;
+    cursor: pointer;
+    padding: 3px 7px;
+}
+.right-icon2:hover{
+    background-color: #eae7e7f1;
+    border-radius: 50%;
+}
+.right-icon:hover::after{
+    position: absolute;
+    top: 2.5rem;
+    font-size: small;
+    right: 10.5rem;
+    content: 'Create';
+    background-color: #777373;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.right-icon2:hover::after{
+    position: absolute;
+    top: 2.5rem;
+    font-size: small;
+    right: 6rem;
+    content: 'Notification';
+    background-color: #777373;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.acct-c{
+    background-color: rgba(163, 61, 163, 0.855);
+    color: white;
+    font-family: bold;
+    padding: 7px 13px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+/* Parent div of side-nav and main-video body */
+.nav-main{
+    display: flex;
+    position: relative;
+    top: 4.5rem;
+    height: 100vh;
+    border-spacing: border-box;
+}
+/* Side navigation menu */
+.side-nav{
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    margin-top: 0.5rem;
+    margin-left: 25px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 4.5rem;
+    bottom: 0;
+    overflow-y: scroll;
+}
+.side-nav i{
+    font-size: 20px;
+}
+.nav-footer1, .nav-footer2{
+    font-size: small;
+    word-spacing: 5px;
+    line-height: 20px;
+    /* font-weight: bold; */
+    color: #4d4d4d;
+}
+.nav-footer3{
+    font-size: 12px;
+    color: #959494;
+}
+/* Adding content to the icons of the nav bar */
+.span1, .span2, .span3,.span4, .span5, .span6,.span7, .span8,.span10, .span11, .span12, .span13,.span14,.span16, .span17,.span18,.span19,.span20,.span21,.span22{
+    cursor: pointer;
+    width: 200px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: -5px;
+}
+.span4,.span9, .span15{
+    padding: 8px;
+    font-size: 18px;
+}
+.span4 span{
+    padding-left: 6px;
+}
+.span1:hover, .span2:hover, .span3:hover, .span4:hover, .span5:hover, .span6:hover, .span7:hover, .span8:hover,.span10:hover,.span11:hover,.span12:hover,.span13:hover,.span14:hover,.span16:hover,.span17:hover,.span18:hover,.span19:hover,.span20:hover,.span21:hover,.span22:hover{
+    background-color: #dddcdcf1;
+}
+.span1:focus, .span2:focus,.span3:focus,.span4:focus, .span5:focus, .span6:focus, .span7:focus, .span8:focus,.span10:focus,.span11:focus,.span12:focus,.span13:focus,.span14:focus,.span16:focus,.span17:focus,.span18:focus,.span19:focus,.span20:focus,.span21:focus,.span22:focus{
+    background-color:  #eae7e7f1;
+}
+.span1::after{
+    content: 'Home';
+    position: relative;
+    left: 1.5rem;
+
+}
+.span2::after{
+    content: 'Shorts';
+    position: relative;
+    left: 1.5rem;
+}
+.span3::after{
+    content: 'Subscriptions';
+    position: relative;
+    left: 1.5rem;
+}
+.span5::after{
+    content: 'History';
+    position: relative;
+    left: 1.5rem;
+}
+.span6::after{
+    content: 'Playlists';
+    position: relative;
+    left: 1.5rem;
+}
+.span7::after{
+    content: 'Watch later';
+    position: relative;
+    left: 1.5rem;
+}
+.span8::after{
+    content: 'Liked videos';
+    position: relative;
+    left: 1.5rem;
+}
+.span10::after{
+    content: 'Trending';
+    position: relative;
+    left: 1.5rem;
+}
+.span11::after{
+    content: 'Music';
+    position: relative;
+    left: 1.5rem;
+}
+.span12::after{
+    content: 'Gaming';
+    margin-left: 19px;
+}
+.span13::after{
+    content: 'News';
+    position: relative;
+    left: 1.5rem;
+}
+.span14::after{
+    content: 'Sports';
+    position: relative;
+    left: 1.5rem;
+}
+.span16::after{
+    content: 'Youtube Premium';
+    position: relative;
+    left: 1.5rem;
+}
+.span17::after{
+    content: 'Youtube Music';
+    margin-left: 27px;
+}
+.span18::after{
+    content: 'Youtube Kids';
+    position: relative;
+    left: 26px;
+}
+.span19::after{
+    content: 'Settings';
+    position: relative;
+    left: 1.5rem;
+}
+.span20::after{
+    content: 'Report history';
+    position: relative;
+    left: 25px;
+}
+.span21::after{
+    content: 'Help';
+    margin-left: 25px;
+}
+.span22::after{
+    content: 'Send feedback';
+    margin-left: 25px;
+}
+/* Styling for videobody */
+.main-video{
+    flex-grow: 1;
+    margin-left: 245px;
+    width: 80%;
+    text-align: center;
+}
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;  
+}
+.video{
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+video{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+}
+.mobile-search{
+    display: none;
+}
+.footer-icon{
+    display: none;
+}
+/* Media query for different screen sizes */
+
+/* Dekstop */
+@media (min-width: 768px) and (max-width: 1023px){
+    .search{
+        width: 250px;
+    }
+    .side-nav{
+        margin-left: -250px;
+        transition: all 1s ease;
+    }  
+    .video{
+        width: calc(50% - 20px);
+    }
+}
+/* Tablet */
+@media (min-width: 480px) and (max-width: 767px){
+    .search-bar{
+        position: relative;
+        right: -4rem;
+    }
+    .search{
+        width: 200px;
+        display: none;
+    }
+    .search-button{
+        border: none;
+        background-color: white;
+    }
+    .search-button:hover{
+        background-color: white;
+    }
+    .icon-account{
+        gap: 0px;
+        position: relative;
+        right: -1rem;
+    }
+    #mic:hover::after{
+        right: 2rem;
+    }
+    .right-icon:hover::after{
+        top: 4rem;
+        right: 3rem;
+    }
+    .right-icon2:hover::after{
+        top: 4rem;
+        right: 0;
+    }
+    .side-nav{
+        margin-left: -250px;
+        transition: all 1s ease;
+    }
+    .video {
+        width: 100%;
+    }
+    }
+/* Mobile  and smaller portrait*/
+@media (max-width: 479px) {
+    .logo-section{
+        height: 40px;
+        margin-left: -50px;
+
+    }
+    .icon-account{
+        display: none;
+        
+    }
+    body i{
+        font-size: 18px;
+    }
+    .menu{
+        display: none;
+    }
+    .side-nav{
+        display: none;
+    }
+
+    .search-bar #mic{
+        display: none;
+    }
+    .search-bar #mic::after{
+        content: none;
+    }
+    .search{
+        display: none;
+    }
+    .search-button{
+        border:none;
+        background-color: white;
+        width: 10px;
+    }
+    .search-button:hover{
+        background: none;
+    }
+    .search-button:hover::after{
+        content: '';
+        background: none;
+    }
+    .ng::after{
+        top: 10px;
+    }
+    .mobile-search{
+        position: relative;
+        top: -35rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 150px;
+    }
+    .youtube-img{
+        display: block;
+        width: 80px;
+        height: 80px;
+    }
+    .side-nav{
+        margin-left: -250px;
+        transition: all 1s ease;
+    }
+    .video {
+        width: 100%;
+        /* min-width: 200px; */
+    }
+}

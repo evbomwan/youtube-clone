@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube clone</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="youtube.css">
+    <link rel="icon" type="image/png" href="./youtube-logo.png">
+    <!-- Link for font used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Link for Icon -->
+    <script src="https://kit.fontawesome.com/095ad91ecc.js" crossorigin="anonymous"></script>
+    <!-- Link for js -->
+     <script src="youtube.js" defer></script>
+</head>
+<body>
+    <!-- Header elements -->
+    <div class ="header">
+            <!-- div for menu icon and logo -->
+            <div class="logo-section"> 
+                <span id="menu" class="menu"><i class="fa-solid fa-bars"></i></span>
+                <span class="logo-image"><img class="image-logo" src="./youtube-logo.png" alt=""><span class="ng">Youtube</span></span>
+            </div>
+            <!-- div for search bar and search icon button -->
+            <div class="search-bar">
+                <i id="search-icon" class="fas fa-search"></i>
+                <input type="text" placeholder="Search" class="search">
+                <button class="search-button">
+                <i class="fas fa-search"></i>
+                </button>
+                <span class="mic"><i id="mic" class="fa-solid fa-microphone"></i></span>
+            </div>
+            <!-- Icons for video, bell and account -->
+            <div class="icon-account">
+                <span class="right-icon"><i class="fa-solid fa-video"></i></span>
+                <span class="right-icon2"><i class="fa-regular fa-bell"></i></span>
+                <p class="acct-c">C</p>
+            </div>
+    </div>
+    <!-- Navigation Menu section -->
+    <div class="nav-main">
+        <nav id="sideNav" class="side-nav">
+            <a href="#" class="span1" ><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="span2"><i class="fas fa-video"></i></a> 
+            <a href="#" class="span3"><i class="fa-brands fa-youtube"></i></a>
+            <hr>
+            <a href="#" class="span4">You<span>></span></a>
+            <a href="#" class="span5"><i class="fa-solid fa-clock-rotate-left"></i></a>
+            <a href="#" class="span6"><i class="fas fa-list"></i></a>
+            <a href="#" class="span7"><i class="fas fa-clock"></i></a>
+            <a href="#" class="span8"><i class="fa-regular fa-thumbs-up"></i></a>
+            <hr>
+            <span class="span9">Explore</span>
+            <a href="#" class="span10"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" class="span11"><i class="fas fa-music"></i></a>
+            <a href="#" class="span12"><i class="fas fa-gamepad"></i></a>
+            <a href="#" class="span13"><i class="fas fa-newspaper"></i></a>
+            <a href="#" class="span14"><i class="fas fa-football-ball"></i></a>
+            <hr>
+            <span class="span15">More from Youtube</span>
+            <a href="#" class="span16"><i class="fa-brands fa-youtube" style="color: red;"></i></a>
+            <a href="#" class="span17"><i class="fas fa-music" style="color: red;"></i></a>
+            <a href="#" class="span18"><i class="fab fa-youtube youtube-kids-icon" style="color: red;"></i></a>
+            <hr>
+            <a href="#" class="span19"><i class="fa-solid fa-gear"></i></a>
+            <a href="#" class="span20"><i class="fa-regular fa-flag"></i></a>
+            <a href="#" class="span21"><i class="fa-regular fa-circle-question"></i></a>
+            <a href="#" class="span22"><i class="fa-regular fa-message"></i></a>
+            <hr>
+            <!-- Nav footer -->
+            <div class="nav-footer1">
+                <span>About</span>
+                <span>Press</span>
+                <span>Copyright</span>
+                <br>
+                <span>Contact Us</span>
+                <span>Creators</span>
+                <br>
+                <span>Advertise</span>
+                <span>Developers</span>
+            </div>
+           <div class="nav-footer2">
+            <span>Team</span>
+            <span>Privacy</span>
+            <span>Policy&Safety</span>
+            <br>
+            <span>How Youtube works</span>
+            <br>
+            <span>Search new features</span>
+           </div>
+           <div class="nav-footer3">
+            <span> &copy;2024 Google LLC</span>
+           </div>
+        </nav>
+         
+        <!-- Video grid/main body section -->
+        <div id="mainVideo" class="main-video">
+            <div class="video-container">
+                <div class="video">
+                    <video controls>
+                        <source src="./jjk1.mp4">
+                    </video>
+                </div>
+                <div class="video">
+                    <video controls>
+                        <source src="./jjk1.mp4">
+                    </video>
+                </div>                  
+                <div class="video">
+                    <video controls>
+                        <source src="./jjk1.mp4">
+                    </video>
+                </div>   
+                    <div class="video">
+                        <video controls>
+                            <source src="./jjk1.mp4">
+                        </video>
+                    </div>
+                    <div class="video">
+                        <video controls>
+                            <source src="./jjk1.mp4">
+                        </video>
+                    </div>
+                    <div class="video">
+                        <video controls>
+                            <source src="./jjk1.mp4">
+                        </video>
+                    </div>
+                    <div class="video">
+                        <video controls>
+                            <source src="./jjk1.mp4">
+                        </video> 
+                    </div>
+                     <div class="video">
+                        <video controls>
+                            <source src="./jjk1.mp4">
+                        </video>
+                     </div>
+                    <div class="video">
+                        <video controls>
+                            <source src="./jjk1.mp4">
+                        </video>
+                    </div>
+                    <div class="video">
+                        <video controls>
+                            <source src="./jjk1.mp4">
+                        </video>
+                    </div> 
+            </div>
+          
+           </div>
+    </div>
+</body>
+</html>
